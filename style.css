@@ -1,15 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    margin: 0;
-    padding: 20px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o footer fique na parte inferior */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    z-index: 1000;
 }
 
 h1 {
-    color: #4CAF50;
+    margin: 0;
 }
 
-p {
-    font-size: 18px;
+main {
+    margin-top: 60px; /* Para evitar que o conteúdo fique embaixo do header fixo */
+    flex: 1; /* Faz o main ocupar o espaço restante da tela */
+    padding: 20px;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-icons {
+    margin: 10px 0;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px; /* Tamanho dos ícones */
+}
+
+.social-icons a:hover {
+    color: #ddd; /* Cor ao passar o mouse */
 }
