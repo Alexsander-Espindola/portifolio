@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     right: 0;
@@ -22,6 +22,33 @@ header {
     padding: 10px 20px;
     z-index: 1000;
 }
+
+nav {
+    background-color: #444;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
 
 h1 {
     margin: 0;
@@ -45,8 +72,17 @@ footer {
     padding: 10px 0;
 }
 
+.imagem {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 20px 0; /* Espaço acima e abaixo da imagem */
+    display: block; /* Faz com que a imagem apareça em uma nova linha */
+}
+
 .social-icons {
-    margin: 10px 0;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
 }
 
 .social-icons a {
