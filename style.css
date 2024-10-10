@@ -73,10 +73,21 @@ footer {
 }
 
 .imagem {
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
-    height: auto; /* Mantém a proporção da imagem */
-    margin: 20px 0; /* Espaço acima e abaixo da imagem */
-    display: block; /* Faz com que a imagem apareça em uma nova linha */
+    width: 510px; /* Define a largura da imagem para 50% da largura da viewport */
+    height: 300px; /* Define a altura da imagem para 50% da altura da viewport */
+    object-fit: cover; /* Mantém o aspecto da imagem e a corta se necessário para preencher */
+    display: block; /* Garante que a imagem fique em uma nova linha */
+    margin: 0; /* Remove margens ao redor da imagem */
+    padding: 10px;
+}
+
+.elementos {
+    width: 200px; /* Define a largura fixa da imagem */
+    height: 100px; /* Define a altura fixa da imagem */
+    object-fit: contain; /* Mantém a proporção da imagem, sem cortá-la */
+    display: flexbox;
+    margin: 0; /* Remove margens ao redor da imagem */
+    padding: 10px;
 }
 
 .social-icons {

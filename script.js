@@ -41,5 +41,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Carrega o conteúdo inicial (Home) ao carregar a página
-    carregarConteudo('home');
+    carregarConteudo('illustrator');
 });
